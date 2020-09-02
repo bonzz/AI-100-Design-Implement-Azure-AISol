@@ -14,8 +14,6 @@ In this lab, you will:
 
 While there is a focus on Cognitive Services, you will also leverage Visual Studio 2019.
 
-> **Note** if you have not already, follow the directions for creating your Azure account, Cognitive Services, and getting your api keys in [Lab1-Technical_Requirements.md](../Lab1-Technical_Requirements/02-Technical_Requirements.md).
-
 ## Lab 2.1: Architecture
 
 We will build a simple C# application that allows you to ingest pictures from your local drive, then invoke the [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) to analyze the images and obtain tags and a description.
