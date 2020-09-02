@@ -171,6 +171,3 @@ The first line takes the incoming message from a user and stores it in a variabl
 
 To incorporate database storage and testing into your logging solution, we recommend the following self-led tutorials that build on this solution : [Storing Data in Cosmos](https://github.com/Azure/LearnAI-Bootcamp/blob/master/lab02.5-logging_chat_conversations/3_Cosmos.md).
 
-## Next Steps
-
-- [Lab 05-01: QnA Maker](../Lab5-QnA/01-Introduction.md)
