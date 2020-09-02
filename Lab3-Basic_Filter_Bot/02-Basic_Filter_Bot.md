@@ -13,7 +13,7 @@ Be mindful of the following AI Ethics principles when designing and implementing
 We encourage you to [read more](https://ai-ethics.azurewebsites.net/) about the Ethical considerations when building intelligent apps.
 
 
-## Lab 3.0 Create an Azure Web App Bot
+## Lab 1.0 Create an Azure Web App Bot
 
 A bot created using the Microsoft Bot Framework can be hosted at any publicly-accessible URL.  For the purposes of this lab, we will register our bot using [Azure Bot Service](https://docs.microsoft.com/en-us/bot-framework/bot-service-overview-introduction).
 
@@ -71,7 +71,7 @@ A bot created using the Microsoft Bot Framework can be hosted at any publicly-ac
 
 ![The basic echo bot response](../images/EchoBot.png)
 
-## Lab 3.1: Creating a simple bot and running it
+## Lab 1.1: Creating a simple bot and running it
 
 1. Open **Visual Studio 2019** or later
 
@@ -185,7 +185,7 @@ You can read more about using the Emulator [here](https://docs.microsoft.com/en-
 
 * **PictureBot.cs**: The `OnMessageActivityAsync` method is the entry point which waits for a message from the user is where we can react to a message once received and wait for further messages.  We can use `turnContext.SendActivityAsync` to send a message from the bot back to the user.
 
-## Lab 3.2:  Managing state and services
+## Lab 1.2:  Managing state and services
 
 1. Navigate again to the **Startup.cs** file
 
@@ -466,7 +466,7 @@ namespace Microsoft.PictureBot
 
 1. Wondering if you configured it correctly? Return to **Startup.cs** and confirm your errors around creating the custom state accessors have been resolved.
 
-## Lab 3.3: Organizing code for bots
+## Lab 1.3: Organizing code for bots
 
 There are many different methods and preferences for developing bots. The SDK allows you to organize your code in whatever way you want. In these labs, we'll organize our conversations into different dialogs, and we'll explore a [MVVM style](https://msdn.microsoft.com/en-us/library/hh848246.aspx) of organizing code around conversations.
 
@@ -718,7 +718,7 @@ Due to time limitations, we will not be walking through creating all the models.
 
 1. Navigate to **{GitHubDir}\Lab3-Basic_Filter_Bot\code\Models**, select all three files, and select **Add**.
 
-## Lab 3.4: Regex and Middleware
+## Lab 1.4: Regex and Middleware
 
 There are a number of things that we can do to improve our bot.  First of all, we may not want to call LUIS for a simple "search pictures" message, which the bot will get fairly frequently from its users.  A simple regular expression could match this, and save us time (due to network latency) and money (due to cost of calling the LUIS service).
 
@@ -795,7 +795,7 @@ Without adding LUIS, our bot is really only going to pick up on a few variations
 
 > Aside: One might argue that the user shouldn't have to type "help" to get a menu of clear options on what the bot can do; rather, this should be the default experience on first contact with the bot.  **Discoverability** is one of the biggest challenges for bots - letting the users know what the bot is capable of doing.  Good [bot design principles](https://docs.microsoft.com/en-us/bot-framework/bot-design-principles) can help.
 
-## Lab 3.5: Running the bot
+## Lab 1.5: Running the bot
 
 ### MainDialog, Again
 
