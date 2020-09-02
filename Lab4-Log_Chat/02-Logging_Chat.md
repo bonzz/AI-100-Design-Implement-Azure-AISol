@@ -9,7 +9,7 @@ This workshop demonstrates how you can perform logging using Microsoft Bot Frame
 
 ## Prerequisites
 
-This lab starts from the assumption that you have built and published the bot from [Lab 3](../Lab3-Basic_Filter_Bot/02-Basic_Filter_Bot.md).
+This lab starts from the assumption that you have built and published the bot from Lab1 Basic Filter Bot.
 
 It is recommended that you do that lab in order to be able to implement logging as covered in this lab. If you have not, reading carefully through all the exercises and looking at some of the code or using it in your own applications may be sufficient, depending on your needs.
 
