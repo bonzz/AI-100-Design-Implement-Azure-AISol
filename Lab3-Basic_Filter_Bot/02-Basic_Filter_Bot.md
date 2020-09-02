@@ -1,4 +1,4 @@
-# Lab 3: Creating a Basic filtering bot
+# Lab 1: Creating a Basic filtering bot
 
 ## Introduction
 
