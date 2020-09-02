@@ -10,7 +10,7 @@ Microsoft Bot Framework Direct Line bots are bots that can function with a custo
 
 This hands-on lab introduces key concepts related to Direct Line API.
 
-## Lab 1.0: Prerequisites
+## Lab 4.0: Prerequisites
 
 This lab starts from the assumption that you have built and published the bot from Lab 3 Basic Filter Bot. It is recommended that you do that lab in order to be successful in the ones that follow. If you have not, reading carefully through all the exercises and looking at some of the code or using it in your own applications may be sufficient, depending on your needs.
 
@@ -37,7 +37,7 @@ Over the course of the last few labs, we have collected various keys. You will n
 
 Ensure that you update the **appsettings.json** file with all the necessary values.
 
-## Lab 1.1: Publish Your Bot
+## Lab 4.1: Publish Your Bot
 
 1. Open your **PictureBot** solution
 
@@ -55,7 +55,7 @@ Ensure that you update the **appsettings.json** file with all the necessary valu
 
 > **Note** Depending on the path you took to get to this lab, you may need to publish a second time otherwise you may get the echo bot service otherwise when you test below.  Republish the bot, only this time change the publish settings to remove existing files.  
 
-## Lab 1.2: Setting up the Direct Line channel
+## Lab 4.2: Setting up the Direct Line channel
 
 1. In the portal, locate your published PictureBot **web app bot** and navigate to the **Channels** tab.
 
@@ -65,7 +65,7 @@ Ensure that you update the **appsettings.json** file with all the necessary valu
 
 You can read detailed instructions on [enabling the Direct Line channel](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-directline?view=azure-bot-service-4.0) and [secrets and tokens](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-3.0#secrets-and-tokens).
 
-## Lab 1.3: Create a console application
+## Lab 4.3: Create a console application
 
 We'll create a console application to help us understand how Direct Line can allow us to connect directly to a bot. The console client application we will create operates in two threads. The primary thread accepts user input and sends messages to the bot. The secondary thread polls the bot once per second to retrieve any messages from the bot, then displays the messages received.
 
