@@ -232,7 +232,3 @@ If you still have time, spend time exploring the www.luis.ai site. Select "Prebu
 ## Extra Credit
 
 If you wish to attempt to create a LUIS model including Azure Cognitive Search, follow the training on [LUIS models including search](https://github.com/Azure/LearnAI-Bootcamp/tree/master/lab01.5-luis).
-
-## Next Steps
-
-- [Lab 07-01: Integrate LUIS](../Lab7-Integrate_LUIS/01-Introduction.md)
