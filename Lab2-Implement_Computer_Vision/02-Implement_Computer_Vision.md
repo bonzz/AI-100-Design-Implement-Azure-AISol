@@ -1,10 +1,10 @@
-# Lab - Implement Computer Vision
+# Lab 1 - Implement Computer Vision
 
 ## Introduction
 
 We're going to build an end-to-end application that allows you to pull in your own pictures, use Cognitive Services to obtain a caption and some tags about the images. In later labs, we will build a Bot Framework bot using LUIS to allow easy, targeted querying of such images.
 
-## Lab 2.0: Objectives
+## Lab 1.0: Objectives
 
 In this lab, you will:
 
@@ -14,7 +14,7 @@ In this lab, you will:
 
 While there is a focus on Cognitive Services, you will also leverage Visual Studio 2019.
 
-## Lab 2.1: Architecture
+## Lab 1.1: Architecture
 
 We will build a simple C# application that allows you to ingest pictures from your local drive, then invoke the [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) to analyze the images and obtain tags and a description.
 
@@ -22,7 +22,7 @@ In the continuation of this lab throughout the course, we'll show you how to que
 
 ![Architecture Diagram](../images/AI_Immersion_Arch.png)
 
-## Lab 2.2: Resources
+## Lab 1.2: Resources
 
 There are some directories in the [main](https://github.com/MicrosoftLearning/AI-100-Design-Implement-Azure-AISol/blob/master/Lab2-Implement_Computer_Vision/) github repo folder:
 
@@ -34,7 +34,7 @@ There are some directories in the [main](https://github.com/MicrosoftLearning/AI
 
   - **Finished**: A finished project that you will make use of to implement computer vision and work with the images in this lab.
 
-## Lab 2.3: Image Processing
+## Lab 1.3: Image Processing
 
 ### Cognitive Services
 
@@ -76,7 +76,7 @@ You can see that there are properties for `Caption` and `Tags` from the images, 
 
 Now let's take a step back for a minute. It isn't quite as simple as creating the "ImageInsights" class and copying over some methods/error handling from service helpers. We still have to call the API and process the images somewhere. For the purpose of this lab, we are going to walk through `ImageProcessor.cs`to understand how it is being used. In future projects, feel free to add this class to your PCL and start from there (it will need modification depending what Cognitive Services you are calling and what you are processing - images, text, voice, etc.).
 
-## Lab 2.4: Review `ImageProcessor.cs`
+## Lab 1.4: Review `ImageProcessor.cs`
 
 1. Navigate to **ImageProcessor.cs** within `ProcessingLibrary`.
 
@@ -158,7 +158,7 @@ return result;
 
 Azure Cosmos DB is Microsoft's resilient NoSQL PaaS solution and is incredibly useful for storing loosely structured data like we have with our image metadata results. There are other possible choices (Azure Table Storage, SQL Server), but Cosmos DB gives us the flexibility to evolve our schema freely (like adding data for new services), query it easily, and can be quickly integrated into Azure Cognitive Search (which we'll do in a later lab).	
 
-## Lab 2.5 (optional): Understanding CosmosDBHelper	
+## Lab 1.5 (optional): Understanding CosmosDBHelper	
 
 Cosmos DB is not a focus of this lab, but if you're interested in what's going on - here are some highlights from the code we will be using:	
 1. Navigate to the `CosmosDBHelper.cs` class in the `ImageStorageLibrary` project. Review the code and the comments. Many of the implementations used can be found in the [Getting Started guide](https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-get-started).	
@@ -166,7 +166,7 @@ Cosmos DB is not a focus of this lab, but if you're interested in what's going o
 - Finally, look in `Program.cs` in `TestCLI` and at  `ProcessDirectoryAsync`. First, we check if the image and metadata have already been uploaded - we can use `CosmosDBHelper` to find the document by ID and to return `null` if the document doesn't exist. Next, if we've set `forceUpdate` or the image hasn't been processed before, we'll call the Cognitive Services using `ImageProcessor` from the `ProcessingLibrary` and retrieve the `ImageInsights`, which we add to our current `ImageMetadata`.  	
 - Once all of that is complete, we can store our image - first the actual image into Blob Storage using our `BlobStorageHelper` instance, and then the `ImageMetadata` into Cosmos DB using our `CosmosDBHelper` instance. If the document already existed (based on our previous check), we should update the existing document. Otherwise, we should be creating a new one.	
 
-## Lab 2.6: Loading Images using TestCLI	
+## Lab 1.6: Loading Images using TestCLI	
 
 We will implement the main processing and storage code as a command-line/console application because this allows you to concentrate on the processing code without having to worry about event loops, forms, or any other UX related distractions. Feel free to add your own UX later.	
 1. In the **TestCLI** project, open the **settings.json** file	
