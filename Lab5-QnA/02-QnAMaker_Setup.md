@@ -50,7 +50,7 @@ In this lab we will explore the QnA Maker for creating bots that connect to a pr
 
 1. For the file, select **Add file**, browse to the **code/Manage Azure Blob Storage** file
 
-> **Note** You can find out more about the supported file types and data sources [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/data-sources-supported)
+      > **Note** You can find out more about the supported file types and data sources [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/data-    sources-supported)
 
 1. For the **Chit-chat**, select **Witty**
 
