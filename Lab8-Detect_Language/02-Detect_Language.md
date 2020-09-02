@@ -2,7 +2,7 @@
 
 In this lab we are going to integrate language detection ability of cognitive services into our bot.
 
-## Lab 8.1: Retrieve your Cognitive Services url and keys
+## Lab 3.1: Retrieve your Cognitive Services url and keys
 
 1. Open the [Azure Portal](https://portal.azure.com)
 
@@ -10,7 +10,7 @@ In this lab we are going to integrate language detection ability of cognitive se
 
 1. Under **RESOURCE MANAGEMENT**, select the **Quick Start** tab and record the url and the key for the cognitive services resource
 
-## Lab 8.2: Add language support to your bot
+## Lab 3.2: Add language support to your bot
 
 1. If not already open, open your **PictureBot** solution
 
