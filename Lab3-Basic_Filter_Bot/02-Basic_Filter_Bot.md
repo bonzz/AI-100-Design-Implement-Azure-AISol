@@ -896,6 +896,3 @@ public async Task<DialogTurnResult> MainMenuAsync(WaterfallStepContext stepConte
 * [Bot Service Documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
 * [Deploy your bot](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=newrg)
 
-## Next Steps
-
-* [Lab 04-01: Log Chat](../Lab4-Log_Chat/01-Introduction.md)
