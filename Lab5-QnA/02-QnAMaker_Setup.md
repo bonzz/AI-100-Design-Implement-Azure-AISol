@@ -70,16 +70,16 @@ In this lab we will explore the QnA Maker for creating bots that connect to a pr
 
 1. On the bot service creation page, fix any naming errors, then select **Create**.
 
-> **Note**  Recent change in Azure requires dashes ("-") be removed from some resource names
+      > **Note**  Recent change in Azure requires dashes ("-") be removed from some resource names
 
 1. Once the bot resource is created, navigate to the new **Web App Bot**, then select **Test in Web Chat**
 
 1. Ask the bot any questions related to a Surface Pro 4 or managing Azure Blog Storage:
 
-- How do I add memory?
-- How long does it take to charge the battery?
-- How do I hard reset?
-- What is a blob?
+      - How do I add memory?
+      - How long does it take to charge the battery?
+      - How do I hard reset?
+      - What is a blob?
 
 1. Ask it some questions it doesn't know, such as:
 
