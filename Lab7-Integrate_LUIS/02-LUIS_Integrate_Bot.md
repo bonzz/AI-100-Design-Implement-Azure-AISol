@@ -6,8 +6,6 @@ Our bot is now capable of taking in a user's input and responding based on the u
 
 We will have to update our bot in order to use LUIS.  We can do this by modifying "Startup.cs" and "PictureBot.cs."
 
-> Prerequisites: This lab builds on [Lab 3](../Lab3-Basic_Filter_Bot/02-Basic_Filter_Bot.md). It is recommended that you do that lab in order to be able to implement logging as covered in this lab. If you have not, reading carefully through all the exercises and looking at some of the code or using it in your own applications may be sufficient, depending on your needs.
-
 > NOTE: If you intend to use the code in the Finished folder, you MUST replace the app specific information with your own app IDs and endpoints.
 
 ## Lab 2.1: Adding natural language understanding
@@ -16,7 +14,7 @@ We will have to update our bot in order to use LUIS.  We can do this by modifyin
 
 1. If not already open, open your **PictureBot** solution in Visual Studio
 
-> **NOTE** You can also start with the **{GitHubPath}/Lab7-Integrate_LUIS/code/Starter/PictureBot/PictureBot.sln** solution if you did not start from Lab 1.
+> **NOTE** You can also start with the **C:\AllFiles\AI-100-Design-Implement-Azure-AISol-master}/Lab7-Integrate_LUIS/code/Starter/PictureBot/PictureBot.sln** solution if you did not start from Lab 1.
 > Be sure to replace all the app settings values
 
 1. Open **Startup.cs** and locate the `ConfigureServices` method. We'll add LUIS here by adding an additional service for LUIS after creating and registering the state accessors.
