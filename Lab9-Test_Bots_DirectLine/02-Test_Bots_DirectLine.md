@@ -278,7 +278,7 @@ Spend some time reviewing this sample code. It's a good exercise to make sure yo
 
 Quick quiz - how are we displaying the Conversation ID? We'll see in the next sections why we might want this.
 
-## Lab 9.4: Using HTTP Get to retrieve messages
+## Lab 4.4: Using HTTP Get to retrieve messages
 
 Because we have the conversation ID, we can retrieve user and bot messages using HTTP Get. If you are familiar and experienced with Rest Clients, feel free to use your tool of choice.
 
