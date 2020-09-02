@@ -1,4 +1,4 @@
-# Lab 5: Creating a Customized QnA Maker Bot
+# Lab : Creating a Customized QnA Maker Bot
 
 ## Introduction
 
@@ -105,14 +105,7 @@ In this lab we will explore the QnA Maker for creating bots that connect to a pr
 
 [!NOTE] The previous steps for reviewing the generated code are correct for the solution that was downloaded during the authoring of this lab.  The solution files may change from time to time based on updates to the frameworks and SDKs so the solution files may differ.  The key aspect here is just have you review the code that is automatically generated from the tool.
 
-## Going Further
-
-What would you do to integrate the QnAMaker code into your picture bot?
 
 ## Resources
 
 - [What is the QnA Maker service?](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview)
-
-## Next Steps
-
-- [Lab 06-01: Implement LUIS](../Lab6-Implement_LUIS/01-Introduction.md)
