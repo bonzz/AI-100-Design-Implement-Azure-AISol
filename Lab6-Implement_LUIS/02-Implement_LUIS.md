@@ -28,7 +28,7 @@ As a review, these are the steps you will generally take when creating LUIS appl
 
 ## Lab 1.0: Creating the LUIS service in the portal (optional)
 
-Creating a LUIS service in the portal is optional, as LUIS provides you with a "starter key" that you can use for the labs. However, if you want to see how to create a free or paid service in the portal, you can follow the steps below.  
+Creating a LUIS service in the portal is optional, as LUIS provides you with a "starter key" that you can use for the labs. However, if you want to see how to create a free or paid service in the portal, you can follow the steps below.
 
 > **Note** If you ran the pre-req ARM Template, you will already have a cognitive services resource that included the Language Understanding APIs.
 
@@ -68,7 +68,7 @@ Let's look at how we can use LUIS to add some natural language capabilities. LUI
 
 1. Sign in using your Organization or Microsoft account. This should be the same account that you used to create the LUIS key in the previous section.
 
-1. Select **Create a LUIS app now**. You should be redirected to a list of your LUIS applications.  If prompted, select **Migrate Later**.  
+1. Select **Create a LUIS app now**. You should be redirected to a list of your LUIS applications.  If prompted, select **Migrate Later**.
 
 1. If this is your first time, you will be asked to agree with service terms of use and select your county.
 
@@ -94,11 +94,11 @@ We want our bot to be able to do the following things:
 - Order prints of pictures
 - Greet the user (although this can also be done other ways, as we will see later)
 
-Let's create intents for the user requesting each of these.  
+Let's create intents for the user requesting each of these.
 
 1. Select the **Create new intent** button.
 
-1. Name the first intent **Greeting** and select **Done**.  
+1. Name the first intent **Greeting** and select **Done**.
 
 1. Give several examples of things the user might say when greeting the bot, pressing "Enter" after each one.
 
@@ -106,17 +106,17 @@ Let's create intents for the user requesting each of these.
 
 Let's see how to create an entity.  When the user requests to search the pictures, they may specify what they are looking for.  Let's capture that in an entity.
 
-1. Select on **Entities** in the left-hand column and then select **+ Create**.  
+1. Select on **Entities** in the left-hand column and then select **+ Create**.
 
 1. Give it an entity name **facet**
 
-1. For the entity type select **Machine learned**.  
+1. For the entity type select **Machine learned**.
 
 1. Select **Create**.
 
 ![Adding an entity named facet, of type Simple](../images/select-facet.png)
 
-1. Select **Intents** in the left-hand sidebar and then click the **Create new intent** button.  
+1. Select **Intents** in the left-hand sidebar and then click the **Create new intent** button.
 
 1. Give it an intent name of **SearchPic** and then click **Done**.
 
@@ -145,13 +145,13 @@ So your utterances may become something like this when facets are labeled:
 
 1. Select **Intents** in the left sidebar and add two more intents:
 
-- Name one intent **"SharePic"**.  This might be identified by utterances like:
+- Name one intent **"SharePic"**. This might be identified by utterances like:
 
   - Share this pic
   - Can you tweet that?
   - Post to Twitter
 
-- Create another intent named **"OrderPic"**.  This could be communicated with utterances like:
+- Create another intent named **"OrderPic"**. This could be communicated with utterances like:
 
   - Print this picture
   - I would like to order prints
@@ -220,7 +220,6 @@ To retrain the model for utterances with low scores, take the following steps:
 1. Test the **Send to Tom** utterance again. It should now return the **SharePic** intent with a higher score.
 
 Your LUIS app is now ready to be used by client applications, tested in a browser through the listed endpoint, or integrated into a bot.
-
 
 You can also [test your published endpoint in a browser](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/PublishApp#test-your-published-endpoint-in-a-browser). Copy the Endpoint URL. To open this URL in your browser, set the URL parameter `&q=` to your test query. For example, append `Find pictures of dogs` to your URL, and then press Enter. The browser displays the JSON response of your HTTP endpoint.
 
