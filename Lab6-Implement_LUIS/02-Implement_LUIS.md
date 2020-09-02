@@ -1,4 +1,4 @@
-# Lab 6: Implementing the LUIS model
+# Lab 1: Implementing the LUIS model
 
 This hands-on lab guides you through creating a model to enhance the Natural Language Processing capabilities of your applications, using Microsoft's Language Understanding Intelligent Service (LUIS).
 
