@@ -12,9 +12,6 @@ Be mindful of the following AI Ethics principles when designing and implementing
 
 We encourage you to [read more](https://ai-ethics.azurewebsites.net/) about the Ethical considerations when building intelligent apps.
 
-## Pre-requisites
-
-1. Follow the directions provided in [Lab1-Technical_Requirements.md](../Lab1-Technical_Requirements/02-Technical_Requirements.md) to download the v4 Bot Framework Emulator to enable you to test your bot locally.
 
 ## Lab 3.0 Create an Azure Web App Bot
 
