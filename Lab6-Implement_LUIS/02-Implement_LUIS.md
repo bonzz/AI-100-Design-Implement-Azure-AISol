@@ -32,7 +32,9 @@ Creating a LUIS service in the portal is optional, as LUIS provides you with a "
 
 > **Note** If you ran the pre-req ARM Template, you will already have a cognitive services resource that included the Language Understanding APIs.
 
-1. Open the [Azure Portal](https://portal.azure.com)
+1. From your environment, open a browser and navigate to azure portal -> https://portal.azure.com
+
+1. Sign-in using the Azure credentials provided in the environment details tab.
 
 1. Select **Create a resource**
 
