@@ -34,25 +34,31 @@ Creating a LUIS service in the portal is optional, as LUIS provides you with a "
 
 1. From your environment, open a browser and navigate to azure portal -> https://portal.azure.com
 
-1. Sign-in using the Azure credentials provided in the environment details tab.
+1. Sign-in using the Azure credentials provided in the environment details tab. Please use ![](./pics/1_1.png) to copy the value.
+
+   ![](./pics/1.png)
 
 1. Select **Create a resource**
 
+   ![](./pics/2.png)
+
 1. Enter **Language Understanding** in the search box and choose **Language Understanding**
+
+   ![](./pics/3.png)
 
 1. Select **Create**
 
-1. For the name, type **{YOURINIT}luisbot**
+1. Select the available subscription and resource group with name like **ai-100-deploymentID**.
 
-1. Select your subscription and and location similar to your resource group
+1. For the name, type **luisbotdeploymentid** , please find the deployment id from the environment details tab.
 
-1. For the pricing tier, select **F0**
+1. Under Authoring Resource , For authoring location select location as west us
 
-1. Select your resources group
+1. For the Authoring pricing tier, select **Free F0** 
 
-1. For the runtime location, select a location similar to your resource group
+1. Under Prediction Resource, select any other location like east us , west us 2 etc.
 
-1. For the runtime pricing, select **F0**
+1. For the prediction pricing tier, select **Free F0**
 
 1. Select **Create**
 
@@ -62,15 +68,15 @@ Creating a LUIS service in the portal is optional, as LUIS provides you with a "
 
 Let's look at how we can use LUIS to add some natural language capabilities. LUIS allows you to map natural language utterances (words/phrases/sentences the user might say when talking to the bot) to intents (tasks or actions the user wants to perform). For our application, we might have several intents: finding pictures, sharing pictures, and ordering prints of pictures, for example. We can give a few example utterances as ways to ask for each of these things, and LUIS will map additional new utterances to each intent based on what it has learned.
 
-> **Warning**: Though Azure services use IE as the default browser, we do not recommend it for LUIS. You should be able to use Chrome or Firefox for all of the labs. Alternatively, you can download either [Microsoft Edge](https://www.microsoft.com/en-us/download/details.aspx?id=48126) or [Google Chrome](https://www.google.com/intl/en/chrome/).
+> **Warning**: Though Azure services use IE as the default browser, we do not recommend it for LUIS. Please use the browser in your lab environment like microsoft edge.
 
-1. Navigate to [https://www.luis.ai](https://www.luis.ai) (**unless you are located in Europe or Australia***). We will create a new LUIS app to support our bot.
+1. Open a new tab in the same session where the azure portal is signed-in and navigate to [https://www.luis.ai](https://www.luis.ai). We will create a new LUIS app to support our bot.
 
-> **Note** If you created a key in a **Europe** region, you will need to create your application at [https://eu.luis.ai/](https://eu.luis.ai/). If you created a key in an **Australia** region, you will need to create your application at [https://au.luis.ai/](https://au.luis.ai/). You can read more about the LUIS publishing regions [here](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-regions).
+1. Click on **Sign In** in the top right-corner. It will automatically sign in with same azure credentials you provided before.
 
-1. Sign in using your Organization or Microsoft account. This should be the same account that you used to create the LUIS key in the previous section.
+1. A pop-window will appear - **Choose an authoring resource**, select the available subscription and for LUIS authoring resource, select the **luisbotdeploymentID-Authoring** and click on **Done**.
 
-1. Select **Create a LUIS app now**. You should be redirected to a list of your LUIS applications.  If prompted, select **Migrate Later**.  
+   ![](./pics/4.png)
 
 1. If this is your first time, you will be asked to agree with service terms of use and select your county.
 
