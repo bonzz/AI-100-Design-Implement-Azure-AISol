@@ -94,7 +94,7 @@ Let's look at how we can use LUIS to add some natural language capabilities. LUI
 
    ![](./pics/6.png)
 
-1. In the top navigation, select the **BUILD** link.  Notice there is one intent called "None".  Random utterances that don't map to any of your intents may be mapped to "None".
+1. Close any pop-ups if appears, In the top navigation, select the **BUILD** link.  Notice there is one intent called "None".  Random utterances that don't map to any of your intents may be mapped to "None".
 
    ![](./pics/7.png)
 
