@@ -218,10 +218,13 @@ We're now ready to train our model. In this exercise, you will perform a simple 
    > [!NOTE]
    > You can publish to your **Production** or **Staging** endpoint. Select **Production**, and read about the reasons for the two endpoints.
 
+   ![](./pics/19.png)
+   
 1. Under **Choose your publishing slot and settings**, select **Production Slot** and then select **Done**.
 
     Publishing creates an endpoint to call the LUIS model. The endpoint URL will be displayed. Copy the endpoint URL and add it to your list of keys for future use.
 
+    ![](./pics/20.png)
 1. In the top bar, select **Test**. Try typing a few utterances and see which intents are returned. Here are some examples you can try:
 
    | Utterance | Result | Score meaning |
@@ -230,13 +233,22 @@ We're now ready to train our model. In this exercise, you will perform a simple 
    | **Hello** | Returns the **Greeting** intent with a score | Fairly positive match |
    | **Send to Tom** | Returns the **Utilities** with a low score | Needs retraining or doesn't match any intents |
 
+   ![](./pics/21.png)
 To retrain the model for utterances with low scores, take the following steps:
 
 1. Beside the low-scoring utterance (in this case, **Send to Tom**), select **Inspect**.
+
+    ![](./pics/22.png)
+    
 1. Beside **Top-scoring intent**, select the drop-down and choose **SharePic** from the list.
+
+    ![](./pics/23.png)
+    
 1. Close the **Test** panel.
 1. Select the **Train** button to retrain your model.
 1. Test the **Send to Tom** utterance again. It should now return the **SharePic** intent with a higher score.
+
+     ![](./pics/24.png)
 
 Your LUIS app is now ready to be used by client applications, tested in a browser through the listed endpoint, or integrated into a bot.
 
