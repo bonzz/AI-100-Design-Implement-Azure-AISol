@@ -39,7 +39,7 @@ services.AddSingleton((Func<IServiceProvider, PictureBotAccessors>)(sp =>
 });
 ```
 
-Add:
+Add: (you will have to add the below code after line 138)
 
 ```csharp
 // Create and register a LUIS recognizer.
@@ -64,6 +64,8 @@ services.AddSingleton(sp =>
 });
 ```
 
+ ![](./pics/4_1.png)
+
 1. Modify the **appsettings.json** to include the following properties, be sure to fill them in with your LUIS instance values:
 
 ```json
@@ -72,8 +74,18 @@ services.AddSingleton(sp =>
 "luisEndPoint": ""
 ```
 
-> **Note** The Luis endpoint url for the .NET SDK should be something like **https://{region}.api.cognitive.microsoft.com** with no api or version after it.
+1. To find the luisAppId, Navigate to the cognitive services website and then go to Manage -> Settings and copy the application Id
 
+   ![](./pics/5.png)
+   
+1. For Luis app key and endpoint, Navigate to cognitive services - **luisbotdeploymentID** in azure portal , then find **Keys and Endpoint** and copy any one key value and the endpoint value.
+
+   ![](./pics/7.png)
+   
+1. After editing the **appsettings.json**, it will look like the below image.
+
+   ![](./pics/6.png)
+   
 ## Lab 7.2: Adding LUIS to PictureBot's MainDialog
 
 1. Open **PictureBot.cs.**. The first thing you'll need to do is initialize the LUIS recognizer, similar to how you did for `PictureBotAccessors`. Below the commented line `// Initialize LUIS Recognizer`, add the following:
