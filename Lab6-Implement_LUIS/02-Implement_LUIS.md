@@ -144,11 +144,11 @@ Once we have some utterances, we have to teach LUIS how to pick out the **search
 
 1. Hover and click the word (or click consecutive words to select a group of words) and then select the "facet" entity.
 
-![Labeling Entity](../images//LuisFacet.png)
+   ![](./pics/14.png)
 
 So your utterances may become something like this when facets are labeled:
 
-![Add Facet Entity](../images//SearchPicsIntentAfter.png)
+   ![](./pics/15_1.png)
 
 >**Note** This workshop does not include Azure Cognitive Search, however, this functionality has been left in for the sake of demonstration.
 
@@ -160,12 +160,16 @@ So your utterances may become something like this when facets are labeled:
   - Can you tweet that?
   - Post to Twitter
 
+  ![](./pics/16.png)
+ 
 - Create another intent named **"OrderPic"**.  This could be communicated with utterances like:
 
   - Print this picture
   - I would like to order prints
   - Can I get an 8x10 of that one
   - Order wallets
+
+  ![](./pics/17.png)
 
 When choosing utterances, it can be helpful to use a combination of questions, commands, and "I would like to..." formats.
 
