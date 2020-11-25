@@ -78,6 +78,10 @@ Let's look at how we can use LUIS to add some natural language capabilities. LUI
 
    ![](./pics/3_1.png)
 
+1. Click on **Choose a different authoring resource** to select your resource created.
+
+   ![](./pics/3_2.png)
+
 1. A pop-window will appear - **Choose an authoring resource**, select the available subscription and for LUIS authoring resource, select the **luisbotdeploymentID-Authoring** and click on **Done**.
 
    ![](./pics/4.png)
