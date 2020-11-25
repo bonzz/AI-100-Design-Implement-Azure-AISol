@@ -82,13 +82,13 @@ Let's look at how we can use LUIS to add some natural language capabilities. LUI
 
    ![](./pics/5.png)
 
-1. Type a name, and select **Done**.  Close the "How to create an effective LUIS app" dialog.
+1. For Name provide **PictureBotLuisModel**, for culture select **English** and select **Done**.
 
-![LUIS New App](../images//LuisNewApp.png)
+   ![](./pics/6.png)
 
 1. In the top navigation, select the **BUILD** link.  Notice there is one intent called "None".  Random utterances that don't map to any of your intents may be mapped to "None".
 
-![LUIS Dashboard](../images//LuisCreateIntent.png)
+   ![](./pics/7.png)
 
 We want our bot to be able to do the following things:
 
@@ -99,17 +99,23 @@ We want our bot to be able to do the following things:
 
 Let's create intents for the user requesting each of these.  
 
-1. Select the **Create new intent** button.
+1. Select the Intents and then Select the **+ Create** button.
 
-1. Name the first intent **Greeting** and select **Done**.  
+   ![](./pics/8.png)
 
-1. Give several examples of things the user might say when greeting the bot, pressing "Enter" after each one.
+1. Name the first intent **Greetings** and select **Done**. 
 
-![LUIS Greeting Intent](../images//LuisGreetingIntent.png)
+   ![](./pics/9.png)
+
+1. Give several examples of things the user might say when greeting the bot, pressing "Enter" after each examples entered.
+
+   ![](./pics/11.png)
 
 Let's see how to create an entity.  When the user requests to search the pictures, they may specify what they are looking for.  Let's capture that in an entity.
 
-1. Select on **Entities** in the left-hand column and then select **+ Create**.  
+1. Select on **Entities** in the left-hand column and then select **+ Create**. 
+
+   ![](./pics/12.png)
 
 1. Give it an entity name **facet**
 
@@ -117,7 +123,7 @@ Let's see how to create an entity.  When the user requests to search the picture
 
 1. Select **Create**.
 
-![Adding an entity named facet, of type Simple](../images/select-facet.png)
+   ![](./pics/13.png)
 
 1. Select **Intents** in the left-hand sidebar and then click the **Create new intent** button.  
 
