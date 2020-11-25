@@ -19,7 +19,13 @@ We will have to update our bot in order to use LUIS.  We can do this by modifyin
 > **NOTE** You can also start with the **C:\AllFiles\AI-100-Design-Implement-Azure-AISol-master\Lab7-Integrate_LUIS\code\Starter\PictureBotPictureBot.sln** solution if you did not start from Lab 1.
 > Be sure to replace all the app settings values
 
-1. Open **Startup.cs** and locate the `ConfigureServices` method. We'll add LUIS here by adding an additional service for LUIS after creating and registering the state accessors.
+  ![](./pics/1.png)
+  
+  ![](./pics/2.png)
+  
+1. Open **Startup.cs** and locate the `ConfigureServices` method. We'll add LUIS here by adding an additional service for LUIS after creating and registering the state accessors. You may notice a debugger placed somewhere around line 61, Please remove it by clicking on the red button on the particular line.
+
+  ![](./pics/3.png)
 
 Below:
 
