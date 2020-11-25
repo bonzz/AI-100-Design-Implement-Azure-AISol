@@ -74,6 +74,10 @@ Let's look at how we can use LUIS to add some natural language capabilities. LUI
 
 1. Click on **Sign In** in the top right-corner. It will automatically sign in with same azure credentials you provided before.
 
+1. Scroll down and find **Create a LUIS app now**.
+
+   ![](./pics/3_1.png)
+
 1. A pop-window will appear - **Choose an authoring resource**, select the available subscription and for LUIS authoring resource, select the **luisbotdeploymentID-Authoring** and click on **Done**.
 
    ![](./pics/4.png)
