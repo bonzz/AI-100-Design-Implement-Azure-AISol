@@ -184,6 +184,7 @@ We're now ready to train our model. In this exercise, you will perform a simple 
     > [!TIP]
     > Training is not always immediate. Sometimes it gets queued and can take several minutes.
 
+  ![](./pics/17_1.png)
 ## Create a public endpoint for the LUIS service
 
 1. After training is finished, select **Manage** in the top toolbar. The following options will appear on the left toolbar:
@@ -203,7 +204,12 @@ We're now ready to train our model. In this exercise, you will perform a simple 
 
 1. You should see a **Prediction Resource** and a **Starter_Key** resource already created.  If you see the **Prediction Resource**, advance to the next section on **Publish the app**.
 1. If you do not see an existing **Prediction Resource**, select **Add prediction resource**. The **Tenant** will already be selected.
-1. Select your subscription, and the resource you created in the Azure portal earlier and then select **Done** to connect the Language Understanding resource to the LUIS service.
+
+   ![](./pics/18_1.png)
+
+1. Select your subscription, and the resource with name **luisbotdeploymentID** you created in the Azure portal earlier and then select **Done** to connect the Language Understanding resource to the LUIS service.
+
+   ![](./pics/18.png)
 
 ## Publish the app
 
