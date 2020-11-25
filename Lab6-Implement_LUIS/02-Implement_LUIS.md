@@ -200,10 +200,10 @@ We're now ready to train our model. In this exercise, you will perform a simple 
     > [!NOTE]
     > The categories on the left pane may change as the portals are updated.  As a result, the keys and endpoints may fall under a different category than the one listed here.
 
+    - **Settings**
     - **Publish settings**
     - **Azure Resources**
     - **Versions**
-    - **Collaborators**
 
 1. Select **Azure Resources**. This screen is used to manage the URL endpoints used to access the LUIS service.
 
