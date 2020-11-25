@@ -88,11 +88,12 @@ services.AddSingleton(sp =>
    
 ## Lab 7.2: Adding LUIS to PictureBot's MainDialog
 
-1. Open **PictureBot.cs.**. The first thing you'll need to do is initialize the LUIS recognizer, similar to how you did for `PictureBotAccessors`. Below the commented line `// Initialize LUIS Recognizer`, add the following:
+1. Open **PictureBot.cs.** , find it under Bots. The first thing you'll need to do is initialize the LUIS recognizer, similar to how you did for `PictureBotAccessors`. Below the commented line `// Initialize LUIS Recognizer`, add the following:
 
 ```csharp
 private LuisRecognizer _recognizer { get; } = null;
 ```
+![](./pics/8.png)
 
 1. Navigate to the **PictureBot** constructor:
 
@@ -108,13 +109,15 @@ Now, maybe you noticed we had this commented out in your previous labs, maybe yo
 _recognizer = recognizer ?? throw new ArgumentNullException(nameof(recognizer));
 ```
 
+After the changes it should look like this :-
+ ![](./pics/9.png)
 Again, this should look very similar to how we initialized the instance of `_accessors`.
 
 As far as updating our `MainDialog` goes, there's no need for us to add anything to the initial `GreetingAsync` step, because regardless of user input, we want to greet the user when the conversation starts.
 
 1. In `MainMenuAsync`, we do want to start by trying Regex, so we'll leave most of that. However, if Regex doesn't find an intent, we want the `default` action to be different. That's when we want to call LUIS.
 
-Within the `MainMenuAsync` switch block, replace:
+Within the `MainMenuAsync` switch block, replace (you will be able to find this block in lines 176-180):
 
 ```csharp
 default:
