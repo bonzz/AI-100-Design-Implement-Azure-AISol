@@ -50,13 +50,13 @@ Creating a LUIS service in the portal is optional, as LUIS provides you with a "
 
 1. Select the available subscription and resource group with name like **ai-100-deploymentID**.
 
-1. For the name, type **luisbot**deploymentid. or **luisbot**uniqueID.
+1. For the name, type **luisbot**deploymentid or **luisbot**uniqueID.
 
-1. Under Authoring Resource , For authoring location select location as west us
+1. Under Authoring Resource, for authoring location select location as WEST US.
 
 1. For the Authoring pricing tier, select **Free F0** 
 
-1. Under Prediction Resource, select any other location like east us , west us 2 etc.
+1. Under Prediction Resource, select any other location like EAST US, WEST US 2 etc.
 
 1. For the prediction pricing tier, select **Free F0**
 
