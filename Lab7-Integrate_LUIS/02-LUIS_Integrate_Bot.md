@@ -190,6 +190,8 @@ Another thing to note is that after every response that called LUIS, we're addin
 1. Open the bot emulator from the desktop. **Note**:- it will ask for update , please update the bot emulator.
 
    ![](./pics/bot_1.png)
+   
+   ![](./pics/bot_1_2.png)
 
 1. Click on **Create a new bot configuration**.
 
