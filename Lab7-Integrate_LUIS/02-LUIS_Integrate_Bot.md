@@ -181,9 +181,31 @@ Another thing to note is that after every response that called LUIS, we're addin
 
 ## Lab 7.3: Testing natural speech phrases
 
-1. Press **F5** to run the app.
+1. Press **F5** to run the app. The localhost will pop-up in the default browser and copy the endpoint URL as shown in the below image.
 
-1. Switch to your Bot Emulator. Try sending the bots different ways of searching pictures. What happens when you say "send me pictures of water" or "show me dog pics"? Try some other ways of asking for, sharing and ordering pictures.
+   ![](./pics/bot_1_1.png)
+
+1. Switch to your Bot Emulator. Try sending the bots different ways of searching pictures. What happens when you say "send me pictures of water" or "show me dog pics"? Try some other ways of asking for, sharing and ordering pictures. For this follow the below instructions.
+
+1. Open the bot emulator from the desktop. **Note**:- it will ask for update , please update the bot emulator.
+
+   ![](./pics/bot_1.png)
+
+1. Click on **Create a new bot configuration**.
+
+   ![](./pics/bot_2.png)
+   
+1. Enter the bot name and the endpoint url you copied in the first step of this particular process. Click **Save And Connect**.
+
+   ![](./pics/bot_3.png)
+   
+1. Save the config file to the local computer.
+
+   ![](./pics/bot_4.png)
+   
+1. The bot will appear and you can search for the utterences.
+
+   ![](./pics/bot_5.png)
 
 If you have extra time, see if there are things LUIS isn't picking up on that you expected it to. Maybe now is a good time to go to luis.ai, [review your endpoint utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/label-suggested-utterances), and retrain/republish your model.
 
